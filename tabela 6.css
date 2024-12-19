@@ -165,6 +165,22 @@ li:before{
 	top:.25em;
 }
 
+#periodic-table {
+	display: column;
+	grid-template-columns: repeat(18, 1fr); /* 18 colunas para acomodar a tabela */
+	gap: 5px; /* Espaço entre os elementos */
+	width: 100%; /* Margem para evitar que elementos toquem as bordas */
+	height: auto; /* Ajuste proporcional à altura */
+  }
+
+.element {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	text-align: center;
+  }
 
 @media only screen and (min-width:80em){
 	@supports (display:grid){
@@ -249,3 +265,196 @@ li:before{
 			font-size:.75em;	
 		}	
 }
+
+
+
+@media (max-width: 600px){
+
+
+	*{ 
+		margin:0;
+		padding:0;
+		list-style:none;
+		box-sizing:border-box;
+		flex-direction: column;
+		background-size: cover;
+	}
+	
+	body{
+		background-size: contain;
+		font:'Montserrat', sans-serif;
+		color:rgb(255,255,255);
+		text-align:center;
+		padding: 0%;
+		background:var(--bg-preto);	
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	
+	}
+	
+	.tabela-div{
+		width: 100%;
+		background-size: contain;
+		max-width: 100%;
+		position: absolute;
+	}
+
+
+
+	table{
+		
+		width: 100%;}
+	
+	
+	:root{
+		--bg-preto: black;
+		--nao-metal:#a4ab80;
+		--gas-nobre:#52493a;
+		--metal-alcalino:#d65981;
+		--metal-alcalino-terroso:#f88d87;
+		--semimetal:#942222;
+		--halogenio:#7c8569;
+		--outros-metais:#de733e; 
+		--metal-transicao:#f2bd76;
+		--lantanideo:#a8bcbd;
+		--actinidio:#823772 
+	}
+	
+	
+	
+	
+	
+	.nao-metal{
+		color:var(--nao-metal);
+	}
+		
+	.gas-nobre{
+		color:var(--gas-nobre);
+	}
+	
+	.metal-alcalino{
+		color:var(--metal-alcalino);
+	}
+		
+	.metal-alcalino-terroso{
+		color:var(--metal-alcalino-terroso);
+	}
+		
+	.semimetal{
+		color:var(--semimetal);
+	}
+		
+	.halogenio{
+		color:var(--halogenio);
+	}
+		
+	.outros-metais{
+		color:var(--outros-metais);
+	}
+		
+	.metal-transicao{
+		color:var(--metal-transicao);
+	}
+		
+	.lantanideo{
+		color:var(--lantanideo);
+	}
+		
+	.actinidio{
+		color:var(--actinidio);
+	}
+	
+		
+	.tabela{
+		width: 100%;
+	
+	}
+	
+	
+	
+	h1{
+		font-size: 35px;
+	}
+	
+	
+	h2{
+		font-size: 30px;
+	}
+	
+	p:last-child{
+		font-size: 13px;	
+	}
+	
+	
+	main{
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	section{
+		width: 6em;
+		height:5em;
+		background:var(--bg-preto);	
+		border:.125rem solid;
+		border-radius:.25rem;	
+		margin-bottom:.5em;
+		position:relative;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	
+	
+	
+	
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+		padding: 0px;
+	}
+	
+	li{
+		font-size: 16px;
+		flex-basis:90%;
+		line-height:1.25;
+		margin-bottom:1em;	
+	}
+	
+	li:before{
+		content:' ';
+		display:inline-block;
+		width:1em;
+		height:1em;
+		border:.125em solid;
+		border-radius:.125rem;	
+		margin-right:.5em;
+		position:relative;
+		top:.25em;
+	}
+	
+	#periodic-table {
+		display: column;
+		grid-template-columns: repeat(18, 1fr); /* 18 colunas para acomodar a tabela */
+		gap: 5px; /* Espaço entre os elementos */
+		width: 100%; /* Margem para evitar que elementos toquem as bordas */
+		height: auto; /* Ajuste proporcional à altura */
+	  }
+	
+	.element {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		text-align: center;
+	  }
+	
+	
+	}
