@@ -8,6 +8,7 @@
 }
 
 
+
 table {
 	width: 100%;
 }
@@ -297,7 +298,7 @@ li:before{
 		width: 100%;
 		background-size: contain;
 		max-width: 100%;
-		position: absolute;
+		position: relative;
 	}
 
 
